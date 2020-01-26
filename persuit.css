@@ -1,0 +1,61 @@
+body {
+  background-color: #222436;
+  color: #b4c2f0; }
+
+#search-input {
+  background-color: #191a2a;
+  color: #c8d3f5; }
+  #search-input::placeholder {
+    color: #4d5482; }
+
+code, pre {
+  background-color: #1e2030;
+  color: #a9b8e8;
+  font-family: "JetBrains Mono", monospace; }
+
+.decl__anchor, .decl__anchor:visited {
+  color: #a9b8e8; }
+
+.decl__anchor:hover {
+  color: #89aeff; }
+
+.decl__signature {
+  border: 1px solid #131421;
+  background-color: #191a2a;
+  padding: 0.8rem; }
+
+.ctor {
+  color: #ffc777; }
+
+.grouped-list__title {
+  color: #828bb8; }
+
+.grouped-list {
+  border-top: 1px solid #131421; }
+
+.decl__body .keyword, .decl__body .syntax {
+  color: #c597f9; }
+
+select#hident2 {
+  background-color: #191a2a;
+  border: none;
+  padding: 0.3rem;
+  outline: none; }
+
+a, a:visited {
+  transition: ease 3ms;
+  color: #82aaff; }
+
+a:hover {
+  color: #c3d6ff; }
+
+.top-banner {
+  background-color: #1e2030; }
+
+.footer {
+  background-color: #1e2030; }
+
+.page-title__label {
+  color: #4d5482; }
+
+/*# sourceMappingURL=persuit.css.map */

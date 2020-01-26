@@ -1,0 +1,78 @@
+@import "colors.scss";
+body {
+  background-color: $gray-4;
+  color: $gray-9;
+}
+
+#search-input {
+  background-color: $gray-2;
+  color: $gray-10;
+  &::placeholder {
+    color: $gray-6;
+  }
+}
+
+code, pre {
+  background-color: $gray-3;
+  color: $gray-8;
+  font-family: "JetBrains Mono", monospace;
+}
+
+.decl__anchor, .decl__anchor:visited {
+  color: $gray-8;
+}
+
+.decl__anchor:hover {
+  color: lighten($dark-blue, 1.28%);
+}
+
+.decl__signature {
+  border: 1px solid $gray-1;
+  background-color: $gray-2;
+  padding: 0.8rem;
+}
+
+.ctor {
+  color: $yellow;
+}
+
+.grouped-list__title {
+  color: $gray-7;
+}
+
+.grouped-list {
+  border-top: 1px solid $gray-1;
+}
+
+.decl__body .keyword, .decl__body .syntax {
+  color: $purple;
+}
+
+
+select#hident2 {
+    background-color: $gray-2;
+    border: none;
+    padding: 0.3rem;
+    outline: none;
+}
+
+a, a:visited {
+  transition: ease 3ms;
+  color: $dark-blue;
+}
+
+a:hover {
+  color: lighten($dark-blue, 12.8%);
+}
+
+.top-banner {
+  background-color: $gray-3;
+}
+
+.footer {
+  background-color: $gray-3;
+}
+
+.page-title__label {
+  color: $gray-6;
+}
