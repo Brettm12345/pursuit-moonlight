@@ -1,0 +1,151 @@
+body {
+  background-color: #222436;
+  color: #b4c2f0;
+  font-family: sans-serif;
+}
+:target {
+  background-color: #222436;
+}
+::selection {
+  background-color: #4fd6be;
+  color: #fff;
+}
+table,
+td {
+  border-color: #191a2a;
+}
+hr {
+  background-color: rgba(19,20,33,0.1);
+}
+a:hover,
+a:visited:hover {
+  color: #84abff;
+}
+a,
+a:visited,
+a:hover > code,
+a:visited:hover > code {
+  color: #82aaff;
+}
+.decl__body .keyword,
+.decl__body .syntax {
+  color: #c597f9;
+}
+.decl__body .message.message--not-available {
+  border-color: #ff5370;
+  background-color: #ff5370;
+  color: #fff;
+}
+.decl__body .top-banner {
+  background-color: #1e2030;
+}
+.decl__body .top-banner__actions__item a:hover,
+.decl__body .top-banner__logo:hover {
+  color: #82aaff;
+}
+.decl__body .footer {
+  background-color: #1e2030;
+}
+.decl__body .footer p {
+  color: #535a8c;
+}
+.decl__body .footer .deplink__version {
+  color: $darkOrange;
+  font-weight: 500;
+}
+.decl__body .footer .page-title__label {
+  color: $gray-8;
+}
+.decl__body .footer .grouped-list {
+  border-top: 1px solid #131421;
+}
+.decl__body .footer .grouped-list__title {
+  color: #a9b8e8;
+  font-weight: 400;
+}
+.result__signature {
+  background-color: #1e2030;
+  border: 1px solid #191a2a;
+  padding: 0.5rem;
+}
+ul {
+  list-style-type: disc;
+  color: #b4c2f0;
+}
+ul li {
+  padding-left: 0;
+}
+ul li::before {
+  content: "";
+}
+#search-input,
+select#hident2 {
+  background-color: #191a2a;
+}
+#search-input {
+  color: #c8d3f5;
+}
+#search-input::placeholder {
+  color: #4d5482;
+}
+select#hident2 {
+  border: none;
+  outline: none;
+  padding: 0.3rem;
+}
+.badge.badge--package {
+  background-color: #ffc0cb;
+}
+.badge.badge--module {
+  background-color: #fc7b7b;
+}
+code,
+pre {
+  background-color: #1e2030;
+  color: #a9b8e8;
+  font-weight: 500;
+  font-family: "JetBrains Mono", monospace;
+}
+:target code,
+:target pre {
+  background-color: #191a2a;
+}
+.ctor {
+  color: #ffc777;
+}
+.decl__anchor,
+.decl__anchor:visited {
+  color: #a9b8e8;
+}
+.decl__anchor:hover {
+  color: #84abff;
+}
+.decl__signature,
+:target .decl__signature {
+  border: 1px solid #131421;
+  font-weight: 500;
+  background-color: #191a2a;
+  padding: 0.8rem;
+}
+.markdown-body blockquote {
+  color: #a9b8e8;
+  border-color: #191a2a;
+}
+.markdown-body .pl-k {
+  color: #c597f9;
+}
+.markdown-body .pl-c1 {
+  color: #ff966c;
+}
+.markdown-body .pl-en {
+  color: #ffc777;
+}
+.markdown-body .pl-s {
+  color: #c3e88d;
+}
+.markdown-body .pl-ent {
+  color: #ff757f;
+}
+.markdown-body .pl-smi {
+  color: #b4c2f0;
+}

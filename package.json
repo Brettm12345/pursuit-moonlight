@@ -6,10 +6,13 @@
   "author": "brettm12345 <brettmandler@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "node-sass ./persuit.scss > ./persuit.css"
+    "build": "stylus ./persuit.styl",
+    "lint": "stlint ./persuit.styl"
   },
   "dependencies": {
-    "node-sass": "^4.13.1",
     "stylus": "^0.54.7"
+  },
+  "devDependencies": {
+    "stlint": "^1.0.59"
   }
 }

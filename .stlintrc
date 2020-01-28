@@ -1,0 +1,13 @@
+{
+  "reporter": "raw",
+  "watch": false,
+  "rules": {
+    "color": false,
+    "colons": [
+      "never"
+    ],
+    "depthControl": {
+      "indentPref": 2
+    }
+  }
+}
