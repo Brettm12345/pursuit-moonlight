@@ -1,0 +1,14 @@
+{
+  "name": "purescript-moonlight",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Brettm12345/purescript-moonlight.git",
+  "author": "brettm12345 <brettmandler@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "node-sass ./persuit.scss > ./persuit.css"
+  },
+  "dependencies": {
+    "node-sass": "^4.13.1"
+  }
+}

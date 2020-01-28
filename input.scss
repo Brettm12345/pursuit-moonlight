@@ -1,0 +1,16 @@
+@import "colors.scss";
+
+#search-input {
+  background-color: $gray-2;
+  color: $gray-10;
+  &::placeholder {
+    color: $gray-6;
+  }
+}
+
+select#hident2 {
+  background-color: $gray-2;
+  border: none;
+  padding: 0.3rem;
+  outline: none;
+}

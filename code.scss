@@ -1,0 +1,58 @@
+@import "colors.scss";
+
+code,
+pre {
+  :target & {
+    background-color: $gray-2;
+  }
+  background-color: $gray-3;
+  color: $gray-8;
+  font-weight: 500;
+  font-family: "JetBrains Mono", monospace;
+}
+
+.ctor {
+  color: $yellow;
+}
+
+.decl__ {
+  &anchor {
+    &,
+    &:visited {
+      color: $gray-8;
+    }
+    &:hover {
+      color: lighten($dark-blue, 1.28%);
+    }
+  }
+  &signature,
+  :target &signature {
+    border: 1px solid $gray-1;
+    font-weight: 500;
+    background-color: $gray-2;
+    padding: 0.8rem;
+  }
+}
+
+$tokens: (
+  "k": $purple,
+  "c1": $orange,
+  "en": $yellow,
+  "s": $green,
+  "ent": $red,
+  "smi": $gray-9
+);
+
+.markdown-body {
+  blockquote {
+    color: $gray-7;
+    border-color: $gray-3;
+  }
+  .pl- {
+    @each $name, $color in $tokens {
+      &#{$name} {
+        color: $color;
+      }
+    }
+  }
+}
