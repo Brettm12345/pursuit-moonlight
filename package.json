@@ -9,6 +9,7 @@
     "build": "node-sass ./persuit.scss > ./persuit.css"
   },
   "dependencies": {
-    "node-sass": "^4.13.1"
+    "node-sass": "^4.13.1",
+    "stylus": "^0.54.7"
   }
 }

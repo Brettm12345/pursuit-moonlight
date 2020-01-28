@@ -1,0 +1,37 @@
+@import "colors"
+
+code,pre
+  :target &
+    background-color $gray-2
+  background-color $gray-3
+  color $gray-8
+  font-weight 500
+  font-family "JetBrains Mono", monospace
+
+.ctor
+  color $yellow
+
+tokens = {
+  k: $purple,
+  c1: $orange,
+  en: $yellow,
+  s: $green,
+  ent: $red,
+  smi: $gray-9
+}
+
+.decl__
+  &anchor
+    &, &:visited
+      color $gray-8
+    &:hover
+      color lighten($dark-blue, 1.28%)
+  &signature, :target &signature
+    border 1px solid $gray-1
+    font-weight 500
+    background-color $gray-2
+    padding 0.8rem
+    for name, value in tokens
+      &{name}
+        color value
+

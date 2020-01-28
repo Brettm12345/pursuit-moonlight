@@ -1,141 +1,151 @@
 ul {
   list-style-type: disc;
-  color: #b4c2f0; }
-
+  color: #b4c2f0;
+}
 ul li {
-  padding-left: 0; }
-  ul li::before {
-    content: ""; }
-
+  padding-left: 0;
+}
+ul li::before {
+  content: "";
+}
 body {
   background-color: #222436;
   color: #b4c2f0;
-  font-family: sans-serif; }
-
+  font-family: sans-serif;
+}
 :target {
-  background-color: #222436; }
-
+  background-color: #222436;
+}
 ::selection {
   background-color: #4fd6be;
-  color: white; }
-
-table {
-  border-color: #191a2a; }
-
+  color: #fff;
+}
+table,
 td {
-  border-color: #191a2a; }
-
+  border-color: #191a2a;
+}
 hr {
-  background-color: #131421; }
-
+  background-color: rgba(19,20,33,0.1);
+}
+a:hover,
+a:visited:hover {
+  color: #84abff;
+}
 a,
-a:visited {
-  color: #82aaff; }
-
-a:hover {
-  color: #89aeff; }
-  a:hover > code {
-    color: #82aaff; }
-
+a:visited,
+a:hover > code,
+a:visited:hover > code {
+  color: #82aaff;
+}
 .decl__body .keyword,
 .decl__body .syntax {
-  color: #c597f9; }
-
-.message.message--not-available {
+  color: #c597f9;
+}
+.decl__body .message.message--not-available {
+  border-color: #ff5370;
   background-color: #ff5370;
-  color: white;
-  border-color: #ff5370; }
-
-.top-banner {
-  background-color: #1e2030; }
-  .top-banner__actions__item a:hover, .top-banner__logo:hover {
-    color: #82aaff; }
-
-.footer {
-  background-color: #1e2030; }
-  .footer p {
-    color: #565e92; }
-
-.deplink__version {
+  color: #fff;
+}
+.decl__body .top-banner {
+  background-color: #1e2030;
+}
+.decl__body .top-banner__actions__item a:hover,
+.decl__body .top-banner__logo:hover {
+  color: #82aaff;
+}
+.decl__body .footer {
+  background-color: #1e2030;
+}
+.decl__body .footer p {
+  color: #535a8c;
+}
+.decl__body .footer .deplink__version {
   color: #fc7b7b;
-  font-weight: 600; }
-
-.page-title__label {
-  color: #a9b8e8; }
-
-.grouped-list {
-  border-top: 1px solid #131421; }
-  .grouped-list__title {
-    color: #a9b8e8;
-    font-weight: 400; }
-
+  font-weight: 500;
+}
+.decl__body .footer .page-title__label {
+  color: #a9b8e8;
+}
+.decl__body .footer .grouped-list {
+  border-top: 1px solid #131421;
+}
+.decl__body .footer .grouped-list__title {
+  color: #a9b8e8;
+  font-weight: 400;
+}
 code,
 pre {
   background-color: #1e2030;
   color: #a9b8e8;
   font-weight: 500;
-  font-family: "JetBrains Mono", monospace; }
-  :target code, :target
-  pre {
-    background-color: #191a2a; }
-
+  font-family: "JetBrains Mono", monospace;
+}
+:target code,
+:target pre {
+  background-color: #191a2a;
+}
 .ctor {
-  color: #ffc777; }
-
-.decl__anchor, .decl__anchor:visited {
-  color: #a9b8e8; }
-
+  color: #ffc777;
+}
+.decl__anchor,
+.decl__anchor:visited {
+  color: #a9b8e8;
+}
 .decl__anchor:hover {
-  color: #89aeff; }
-
+  color: #84abff;
+}
 .decl__signature,
 :target .decl__signature {
   border: 1px solid #131421;
   font-weight: 500;
   background-color: #191a2a;
-  padding: 0.8rem; }
-
-.markdown-body blockquote {
-  color: #828bb8;
-  border-color: #1e2030; }
-
-.markdown-body .pl-k {
-  color: #c597f9; }
-
-.markdown-body .pl-c1 {
-  color: #ff966c; }
-
-.markdown-body .pl-en {
-  color: #ffc777; }
-
-.markdown-body .pl-s {
-  color: #c3e88d; }
-
-.markdown-body .pl-ent {
-  color: #ff757f; }
-
-.markdown-body .pl-smi {
-  color: #b4c2f0; }
-
+  padding: 0.8rem;
+}
+.decl__signaturek,
+:target .decl__signaturek {
+  color: #c597f9;
+}
+.decl__signaturec1,
+:target .decl__signaturec1 {
+  color: #ff966c;
+}
+.decl__signatureen,
+:target .decl__signatureen {
+  color: #ffc777;
+}
+.decl__signatures,
+:target .decl__signatures {
+  color: #c3e88d;
+}
+.decl__signatureent,
+:target .decl__signatureent {
+  color: #ff757f;
+}
+.decl__signaturesmi,
+:target .decl__signaturesmi {
+  color: #b4c2f0;
+}
 .badge.badge--package {
-  background-color: #f7a4ec; }
-
+  background-color: #f7a4ec;
+}
 .badge.badge--module {
-  background-color: #fc7b7b; }
-
+  background-color: #fc7b7b;
+}
 #search-input {
   background-color: #191a2a;
-  color: #c8d3f5; }
-  #search-input::placeholder {
-    color: #4d5482; }
-
+  color: #c8d3f5;
+}
+#search-input::placeholder {
+  color: #4d5482;
+}
 select#hident2 {
   background-color: #191a2a;
   border: none;
   padding: 0.3rem;
-  outline: none; }
-
+  outline: none;
+}
 .result__signature {
   background-color: #1e2030;
   border: 1px solid #191a2a;
-  padding: 0.5rem; }
+  padding: 0.5rem;
+}
