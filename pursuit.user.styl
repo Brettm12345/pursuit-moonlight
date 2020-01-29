@@ -126,27 +126,32 @@ bc(c)
     &:hover { fg: $darkBlue }
     &, &:hover > code { fg: $darkBlue }
 
+  .top-banner
+    &__actions__item a:hover, &__logo:hover { fg: $darkBlue }
+    background-color $gray3
+  .footer
+    background-color $gray3
+    p { fg: $gray6 }
+    .deplink__version
+      font-weight 500
+      color $darkOrange
+
+  .page-title__label { fg: $gray8 }
+
+  .grouped-list
+    border-top basis(0.125) solid $gray1
+    &__title
+      font-weight 400
+      color $gray8
+
   .decl__body
     .keyword, .syntax { fg: $purple }
-    .message.message--not-available
-      border-color $darkRed
-      color $white
-      background-color $darkRed
-    .top-banner
-      &__actions__item a:hover, &__logo:hover { fg: $darkBlue }
-      background-color $gray3
-    .footer
-      background-color $gray3
-      p { fg: $gray6 }
-      .deplink__version
-        font-weight 500
-        color $darkOrange
-      .page-title__label { fg: $gray8 }
-      .grouped-list
-        border-top basis(0.125) solid $gray1
-        &__title
-          font-weight 400
-          color $gray8
+
+
+  .message.message--not-available
+    border-color $darkRed
+    color $white
+    background-color $darkRed
 
   .result__signature
     padding 0.5rem
