@@ -4,32 +4,6 @@
 @version      1.0.0
 @license      unlicense
 @var text  monospaceFont "Monospace font" "JetBrains Mono"
-@var color desaturatedGray "Desaturated Gray" #7f85a3
-@var color darkBlue "Dark Blue" #82aaff
-@var color skyBlue "Sky Blue" #56c9ff
-@var color cyan "Cyan" #86e1fc
-@var color red "Red" #ff757f
-@var color darkRed "Dark Red" #ff5370
-@var color lightRed "Light Red" #ff98a4
-@var color yellow "Yellow" #ffc777
-@var color orange "Orange" #ff966c
-@var color darkOrange "Dark Orange" #fc7b7b
-@var color teal "Teal" #4fd6be
-@var color green "Green" #c3e88d
-@var color purple "Purple" #c597f9
-@var color pink "Pink" #f7a4ec
-@var color indigo "Indigo" #7a88cf
-@var color brightCyan "Bright Cyan" #b4f9f8
-@var color gray1 "Gray 1" #131421
-@var color gray2 "Gray 2" #191a2a
-@var color gray3 "Gray 3" #1e2030
-@var color gray4 "Gray 4" #222436
-@var color gray5 "Gray 5" #2f334d
-@var color gray6 "Gray 6" #4d5482
-@var color gray7 "Gray 7" #828bb8
-@var color gray8 "Gray 8" #a9b8e8
-@var color gray9 "Gray 9" #b4c2f0
-@var color fg    "Foreground" #c8d3f5
 @preprocessor   stylus
 ==/UserStyle== */
 
@@ -40,66 +14,36 @@ fg(c)
 bc(c)
   border-color c
 
+$monospaceFont = monospaceFont
+$desaturatedGray = #7f85a3
+$darkBlue = #82aaff
+$skyBlue = #56c9ff
+$cyan = #86e1fc
+$red = #ff757f
+$darkRed = #ff5370
+$lightRed = #ff98a4
+$yellow = #ffc777
+$orange = #ff966c
+$darkOrange =#fc7b7b
+$teal =#4fd6be
+$green =#c3e88d
+$purple =#c597f9
+$pink =#f7a4ec
+$indigo =#7a88cf
+$brightCyan =#b4f9f8
+$white = #fff
+$gray1 = #131421
+$gray2 = #191a2a
+$gray3 = #1e2030
+$gray4 = #222436
+$gray5 = #2f334d
+$gray6 = #4d5482
+$gray7 = #828bb8
+$gray8 = #a9b8e8
+$gray9 = #b4c2f0
+$fg = #c8d3f5
+
 @-moz-document domain("persuit.purescript.org")
-  :root
-    --brightCyan brightCyan
-    --cyan cyan
-    --darkBlue darkBlue
-    --darkOrange darkOrange
-    --darkRed darkRed
-    --desaturatedGray desaturatedGray
-    --fg fg
-    --gray1 gray1
-    --gray2 gray2
-    --gray3 gray3
-    --gray4 gray4
-    --gray5 gray5
-    --gray6 gray6
-    --gray7 gray7
-    --gray8 gray8
-    --gray9 gray9
-    --green green
-    --indigo indigo
-    --lightRed lightRed
-    --monospaceFont monospaceFont
-    --orange orange
-    --pink pink
-    --purple purple
-    --red red
-    --skyBlue skyBlue
-    --teal teal
-    --white white
-    --yellow yellow
-
-  $monospaceFont = var(--monospaceFont)
-  $desaturatedGray = var(--desaturatedGray)
-  $darkBlue = var(--darkBlue)
-  $skyBlue = var(--skyBlue)
-  $cyan = var(--cyan)
-  $red = var(--red)
-  $darkRed = var(--darkRed)
-  $lightRed = var(--lightRed)
-  $yellow = var(--yellow)
-  $orange = var(--orange)
-  $darkOrange = var(--darkOrange)
-  $teal = var(--teal)
-  $green = var(--green)
-  $purple = var(--purple)
-  $pink = var(--pink)
-  $indigo = var(--indigo)
-  $brightCyan = var(--brightCyan)
-  $white = var(--white)
-  $gray1 = var(--gray1)
-  $gray2 = var(--gray2)
-  $gray3 = var(--gray3)
-  $gray4 = var(--gray4)
-  $gray5 = var(--gray5)
-  $gray6 = var(--gray6)
-  $gray7 = var(--gray7)
-  $gray8 = var(--gray8)
-  $gray9 = var(--gray9)
-  $fg = var(--fg)
-
   body
     font-family sans-serif
     color $gray9
