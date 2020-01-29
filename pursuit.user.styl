@@ -127,20 +127,16 @@ bc(c)
     &::before
       content ""
 
-  :target
-    background-color $gray4
+  :target { bg: $gray4 }
 
   ::selection
     color $white
     background-color $teal
 
-  .top-banner
-    &__actions__item a:hover, &__logo:hover { fg: $darkBlue }
-    background-color $gray3
-
-  .footer
-    background-color $gray3
-    p { fg: $gray6 }
+  .top-banner { bg: $gray3 }
+  .top-banner__actions__item a:hover, .top-banner__logo:hover { fg: $darkBlue }
+  .footer { bg: $gray3 }
+  .footer p { fg: $gray6 }
 
   .page-title__label { fg: $gray8 }
 
@@ -164,9 +160,9 @@ bc(c)
     border 1px solid $gray2
     background-color $gray3
 
-  #search-input, select#hident2 { bg: $gray2 }
   #search-input
     color $fg
+    &, select#hident2 { bg: $gray2 }
     &::placeholder { fg: $gray6 }
 
   select#hident2
