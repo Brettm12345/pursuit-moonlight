@@ -33,35 +33,6 @@
 @preprocessor   stylus
 ==/UserStyle== */
 
-$monospaceFont = monospaceFont
-$desaturatedGray = desaturatedGray
-$darkBlue = darkBlue
-$skyBlue = skyBlue
-$cyan = cyan
-$red = red
-$darkRed = darkRed
-$lightRed = lightRed
-$yellow = yellow
-$orange = orange
-$darkOrange =darkOrange
-$teal =teal
-$green =green
-$purple =purple
-$pink =pink
-$indigo =indigo
-$brightCyan =brightCyan
-$white = white
-$gray1 = gray1
-$gray2 = gray2
-$gray3 = gray3
-$gray4 = gray4
-$gray5 = gray5
-$gray6 = gray6
-$gray7 = gray7
-$gray8 = gray8
-$gray9 = gray9
-$fg = fg
-
 bg(c)
   background-color c
 fg(c)
@@ -70,6 +41,65 @@ bc(c)
   border-color c
 
 @-moz-document domain("persuit.purescript.org")
+  :root
+    --brightCyan brightCyan
+    --cyan cyan
+    --darkBlue darkBlue
+    --darkOrange darkOrange
+    --darkRed darkRed
+    --desaturatedGray desaturatedGray
+    --fg fg
+    --gray1 gray1
+    --gray2 gray2
+    --gray3 gray3
+    --gray4 gray4
+    --gray5 gray5
+    --gray6 gray6
+    --gray7 gray7
+    --gray8 gray8
+    --gray9 gray9
+    --green green
+    --indigo indigo
+    --lightRed lightRed
+    --monospaceFont monospaceFont
+    --orange orange
+    --pink pink
+    --purple purple
+    --red red
+    --skyBlue skyBlue
+    --teal teal
+    --white white
+    --yellow yellow
+
+  $monospaceFont = var(--monospaceFont)
+  $desaturatedGray = var(--desaturatedGray)
+  $darkBlue = var(--darkBlue)
+  $skyBlue = var(--skyBlue)
+  $cyan = var(--cyan)
+  $red = var(--red)
+  $darkRed = var(--darkRed)
+  $lightRed = var(--lightRed)
+  $yellow = var(--yellow)
+  $orange = var(--orange)
+  $darkOrange = var(--darkOrange)
+  $teal = var(--teal)
+  $green = var(--green)
+  $purple = var(--purple)
+  $pink = var(--pink)
+  $indigo = var(--indigo)
+  $brightCyan = var(--brightCyan)
+  $white = var(--white)
+  $gray1 = var(--gray1)
+  $gray2 = var(--gray2)
+  $gray3 = var(--gray3)
+  $gray4 = var(--gray4)
+  $gray5 = var(--gray5)
+  $gray6 = var(--gray6)
+  $gray7 = var(--gray7)
+  $gray8 = var(--gray8)
+  $gray9 = var(--gray9)
+  $fg = var(--fg)
+
   body
     font-family sans-serif
     color $gray9
