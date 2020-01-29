@@ -2,12 +2,18 @@
   "reporter": "raw",
   "watch": false,
   "rules": {
+    "useMixinInsteadUnit": {
+      "conf": "never"
+    },
     "color": {
       "conf": "lowercase",
       "enabled": true,
       "allowOnlyInVar": true,
       "allowShortcut": true,
       "denyRGB": false
+    },
+    "mixedSpaces": {
+      "indentPerf": "spaces"
     },
     "depthControl": {
       "enabled": false,

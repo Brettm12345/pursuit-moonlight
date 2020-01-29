@@ -46,6 +46,7 @@ bc(c)
   border-color c
 
 @-moz-document domain("pursuit.purescript.org")
+  // @stlint-ignore
   :root
     --brightCyan brightCyan
     --cyan cyan
@@ -110,13 +111,6 @@ bc(c)
     color $gray9
     background-color $gray4
 
-  :target
-    background-color $gray4
-
-  ::selection
-    color $white
-    background-color $teal
-
   table, td { bc: $gray2 }
   hr { bg: $gray1 }
 
@@ -124,7 +118,21 @@ bc(c)
     &:hover { fg: $darkBlue }
     &, &:hover > code { fg: $darkBlue }
 
-  .page-title__label { fg: $gray8 }
+  ul
+    color $gray9
+    list-style-type disc
+
+  li
+    padding-left 0
+    &::before
+      content ""
+
+  :target
+    background-color $gray4
+
+  ::selection
+    color $white
+    background-color $teal
 
   .top-banner
     &__actions__item a:hover, &__logo:hover { fg: $darkBlue }
@@ -134,12 +142,14 @@ bc(c)
     background-color $gray3
     p { fg: $gray6 }
 
+  .page-title__label { fg: $gray8 }
+
   .deplink__version
     font-weight 500
     color $darkOrange
 
   .grouped-list
-    border-top basis(0.125) solid $gray1
+    border-top 1px solid $gray1
     &__title
       font-weight 400
       color $gray8
@@ -153,14 +163,6 @@ bc(c)
     padding 0.5rem
     border 1px solid $gray2
     background-color $gray3
-
-  ul
-    color $gray9
-    list-style-type disc
-    li
-      padding-left 0
-      &::before
-        content ""
 
   #search-input, select#hident2 { bg: $gray2 }
   #search-input
