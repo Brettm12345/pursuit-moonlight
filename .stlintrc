@@ -9,10 +9,8 @@
       "allowShortcut": true,
       "denyRGB": false
     },
-    "colons": [
-      "never"
-    ],
     "depthControl": {
+      "enabled": false,
       "indentPref": 2
     }
   }
