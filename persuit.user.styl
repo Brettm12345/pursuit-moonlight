@@ -13,141 +13,154 @@
 @var text     $monospaceFont  "Custom monospace font" "JetBrains Mono"
 ==/UserStyle== */
 
-$desaturatedGray = #7f85a3
-$darkBlue = #82aaff
-$skyBlue = #56c9ff
-$cyan = #86e1fc
-$red = #ff757f
-$darkRed = #ff5370
-$lightRed = #ff98a4
-$yellow = #ffc777
-$orange = #ff966c
-$darkOrange =#fc7b7b
-$teal =#4fd6be
-$green =#c3e88d
-$purple =#c597f9
-$pink =#f7a4ec
-$indigo =#7a88cf
-$brightCyan =#b4f9f8
-$white = #fff
-$gray1 = #131421
-$gray2 = #191a2a
-$gray3 = #1e2030
-$gray4 = #222436
-$gray5 = #2f334d
-$gray6 = #4d5482
-$gray7 = #828bb8
-$gray8 = #a9b8e8
-$gray9 = #b4c2f0
-$fg = #c8d3f5
-
 @-moz-document domain("persuit.purescript.org")
-body
-  font-family sans-serif
-  color $gray9
-  background-color $gray4
+  $desaturatedGray = $desaturatedGray
+  $darkBlue = $darkBlue
+  $skyBlue = $skyBlue
+  $cyan = $cyan
+  $red = $red
+  $darkRed = $darkRed
+  $lightRed = $lightRed
+  $yellow = $yellow
+  $orange = $orange
+  $darkOrange = $darkOrange
+  $teal = $teal
+  $green = $green
+  $purple = $purple
+  $pink = $pink
+  $indigo = $indigo
+  $brightCyan = $brightCyan
+  $white = $white
+  $gray1 = $gray1
+  $gray2 = $gray2
+  $gray3 = $gray3
+  $gray4 = $gray4
+  $gray5 = $gray5
+  $gray6 = $gray6
+  $gray7 = $gray7
+  $gray8 = $gray8
+  $gray9 = $gray9
+  $fg = $fg
 
-:target
-  background-color $gray4
+ body
+    font-family sans-serif
+    color $gray9
+    background-color $gray4
 
-::selection
-  color $white
-  background-color $teal
+  :target
+    background-color $gray4
 
-table, td
-  border-color $gray2
-
-hr
-  background-color rgba($gray1, 10%)
-
-a, a:visited
-  &:hover
-    color lighten($darkBlue, 1.28%)
-  &, &:hover > code
-    color $darkBlue
-
-.decl__body
-  .keyword, .syntax
-    color $purple
-  .message.message--not-available
-    border-color $darkRed
+  ::selection
     color $white
-    background-color $darkRed
-  .top-banner
-    background-color $gray3
-    &__actions__item a:hover, &__logo:hover
-      color $darkBlue
-  .footer
-    background-color $gray3
-    p
-      color lighten($gray6, 5%)
-    .deplink__version
-      font-weight 500
-      color $darkOrange
-    .page-title__label
-      color $gray-8
-    .grouped-list
-      border-top basis(0.125) solid $gray1
-      &__title
-        font-weight 400
-        color $gray8
+    background-color $teal
 
-.result__signature
-  padding 0.5rem
-  border 1 solid $gray2
-  background-color $gray3
-ul
-  color $gray9
-  list-style-type disc
-  li
-    padding-left 0
-    &::before content ""
-
-#search-input, select#hident2
-  background-color $gray2
-
-#search-input
-  color $fg
-  &::placeholder color $gray6
-
-select#hident2
-  padding 0.3rem
-  border none
-  outline none
-
-.badge.badge--
-  &package background-color $pink
-  &module background-color $darkOrange
-
-code,pre
-  :target &
-    background-color $gray2
-  background-color $gray3
-  color $gray8
-  font-weight 500
-  font-family $monospaceFont, monospace
-
-.ctor
-  color $yellow
-
-.decl__
-  &anchor
-    &, &:visited color $gray8
-    &:hover color lighten($darkBlue, 1.28%)
-  &signature, :target &signature
-    padding 8rem
-    font-weight 500
-    border 1 solid $gray1
-    background-color $gray2
-
-.markdown-body
-  blockquote
+  table, td
     border-color $gray2
+
+  hr
+    background-color rgba($gray1, 10%)
+
+  a, a:visited
+    &:hover
+      color lighten($darkBlue, 1.28%)
+    &, &:hover > code
+      color $darkBlue
+
+  .decl__body
+    .keyword, .syntax
+      color $purple
+    .message.message--not-available
+      border-color $darkRed
+      color $white
+      background-color $darkRed
+    .top-banner
+      background-color $gray3
+      &__actions__item a:hover, &__logo:hover
+        color $darkBlue
+    .footer
+      background-color $gray3
+      p
+        color lighten($gray6, 5%)
+      .deplink__version
+        font-weight 500
+        color $darkOrange
+      .page-title__label
+        color $gray-8
+      .grouped-list
+        border-top basis(0.125) solid $gray1
+        &__title
+          font-weight 400
+          color $gray8
+
+  .result__signature
+    padding 0.5rem
+    border 1 solid $gray2
+    background-color $gray3
+
+  ul
+    color $gray9
+    list-style-type disc
+    li
+      padding-left 0
+      &::before
+        content ""
+
+  #search-input, select#hident2
+    background-color $gray2
+
+  #search-input
+    color $fg
+    &::placeholder
+      color $gray6
+
+  select#hident2
+    padding 0.3rem
+    border none
+    outline none
+
+  .badge.badge--
+    &package background-color
+      $pink
+    &module background-color
+      $darkOrange
+
+  code,pre
+    :target &
+      background-color $gray2
+    background-color $gray3
     color $gray8
-  .pl-
-    &k color $purple
-    &c1 color $orange
-    &en color $yellow
-    &s color $green
-    &en color $red
-    &smi color $gray9
+    font-weight 500
+    font-family $monospaceFont, monospace
+
+  .ctor
+    color $yellow
+
+  .decl__
+    &anchor
+      &, &:visited
+        color $gray8
+      &:hover color
+        lighten($darkBlue, 1.28%)
+    &signature, :target &signature
+      padding 8rem
+      font-weight 500
+      border 1 solid $gray1
+      background-color $gray2
+
+  .markdown-body
+    blockquote
+      border-color $gray2
+      color $gray8
+    .pl-
+      &k
+        color $purple
+      &c1
+        color $orange
+      &en
+        color $yellow
+      &s
+        color $green
+      &en
+        color $red
+      &smi
+        color $gray9
