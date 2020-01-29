@@ -1,14 +1,14 @@
 body {
-  background-color: #222436;
-  color: #b4c2f0;
   font-family: sans-serif;
+  color: #b4c2f0;
+  background-color: #222436;
 }
 :target {
   background-color: #222436;
 }
 ::selection {
-  background-color: #4fd6be;
   color: #fff;
+  background-color: #4fd6be;
 }
 table,
 td {
@@ -31,10 +31,11 @@ a:visited:hover > code {
 .decl__body .syntax {
   color: #c597f9;
 }
-.decl__body .message.message--not-available {
+.decl__body .message,
+.decl__body .message--not-available {
   border-color: #ff5370;
-  background-color: #ff5370;
   color: #fff;
+  background-color: #ff5370;
 }
 .decl__body .top-banner {
   background-color: #1e2030;
@@ -50,27 +51,27 @@ a:visited:hover > code {
   color: #535a8c;
 }
 .decl__body .footer .deplink__version {
-  color: $darkOrange;
   font-weight: 500;
+  color: #fc7b7b;
 }
 .decl__body .footer .page-title__label {
-  color: $gray-8;
+  color: #a9b8e8;
 }
 .decl__body .footer .grouped-list {
-  border-top: 1px solid #131421;
+  border-top: basis(0.125) solid #131421;
 }
 .decl__body .footer .grouped-list__title {
-  color: #a9b8e8;
   font-weight: 400;
+  color: #a9b8e8;
 }
 .result__signature {
-  background-color: #1e2030;
-  border: 1px solid #191a2a;
   padding: 0.5rem;
+  border: 1 solid #191a2a;
+  background-color: #1e2030;
 }
 ul {
-  list-style-type: disc;
   color: #b4c2f0;
+  list-style-type: disc;
 }
 ul li {
   padding-left: 0;
@@ -89,12 +90,12 @@ select#hident2 {
   color: #4d5482;
 }
 select#hident2 {
+  padding: 0.3rem;
   border: none;
   outline: none;
-  padding: 0.3rem;
 }
 .badge.badge--package {
-  background-color: #ffc0cb;
+  background-color: #f7a4ec;
 }
 .badge.badge--module {
   background-color: #fc7b7b;
@@ -122,14 +123,14 @@ pre {
 }
 .decl__signature,
 :target .decl__signature {
-  border: 1px solid #131421;
+  padding: 8rem;
   font-weight: 500;
+  border: 1 solid #131421;
   background-color: #191a2a;
-  padding: 0.8rem;
 }
 .markdown-body blockquote {
-  color: #a9b8e8;
   border-color: #191a2a;
+  color: #a9b8e8;
 }
 .markdown-body .pl-k {
   color: #c597f9;

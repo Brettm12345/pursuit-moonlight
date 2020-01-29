@@ -15,7 +15,7 @@ $purple =#c597f9
 $pink =#f7a4ec
 $indigo =#7a88cf
 $brightCyan =#b4f9f8
-$white = #ffffff
+$white = #fff
 $gray1 = #131421
 $gray2 = #191a2a
 $gray3 = #1e2030
@@ -131,19 +131,20 @@ code,pre
     border 1 solid $gray1
     background-color $gray2
 
-$tokens = {
-  k: $purple
-  c1: $orange
-  en: $yellow
-  s: $green
-  ent: $red
-  smi: $gray9
-}
 .markdown-body
   blockquote
     border-color $gray2
     color $gray8
   .pl-
-    for name, value in $tokens
-      &{name}
-        color value
+    &k
+      color $purple
+    &c1
+      color $orange
+    &en
+      color $yellow
+    &s
+      color $green
+    &ent
+      color $red
+    &smi
+      color $gray9
