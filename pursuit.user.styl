@@ -120,10 +120,10 @@ bc(c)
   table, td
     border-color $gray2
 
-  // hr { bg: rgba($gray1, 10%) }
+  hr { bg: $gray1 }
 
   a, a:visited
-    // &:hover { fg: lighten($darkBlue, 1.28%) }
+    &:hover { fg: $darkBlue }
     &, &:hover > code { fg: $darkBlue }
 
   .decl__body
@@ -137,7 +137,7 @@ bc(c)
       background-color $gray3
     .footer
       background-color $gray3
-      // p { fg: lighten($gray6, 5%) }
+      p { fg: $gray6 }
       .deplink__version
         font-weight 500
         color $darkOrange
@@ -187,7 +187,7 @@ bc(c)
   .decl__
     &anchor
       &, &:visited { fg: $gray8 }
-      // &:hover { fg: lighten($darkBlue, 1.28%) }
+      &:hover { fg: $darkBlue }
     &signature, :target &signature
       padding 8rem
       font-weight 500
