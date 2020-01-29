@@ -2,7 +2,13 @@
   "reporter": "raw",
   "watch": false,
   "rules": {
-    "color": false,
+    "color": {
+      "conf": "lowercase",
+      "enabled": true,
+      "allowOnlyInVar": true,
+      "allowShortcut": true,
+      "denyRGB": false
+    },
     "colons": [
       "never"
     ],
