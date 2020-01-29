@@ -117,14 +117,14 @@ bc(c)
     color $white
     background-color $teal
 
-  table, td
-    border-color $gray2
-
+  table, td { bc: $gray2 }
   hr { bg: $gray1 }
 
   a, a:visited
     &:hover { fg: $darkBlue }
     &, &:hover > code { fg: $darkBlue }
+
+  .page-title__label { fg: $gray8 }
 
   .top-banner
     &__actions__item a:hover, &__logo:hover { fg: $darkBlue }
@@ -138,14 +138,11 @@ bc(c)
     font-weight 500
     color $darkOrange
 
-  .page-title__label { fg: $gray8 }
-
   .grouped-list
     border-top basis(0.125) solid $gray1
     &__title
       font-weight 400
       color $gray8
-
 
   .message.message--not-available
     border-color $darkRed
@@ -154,7 +151,7 @@ bc(c)
 
   .result__signature
     padding 0.5rem
-    border 1 solid $gray2
+    border 1px solid $gray2
     background-color $gray3
 
   ul
@@ -179,12 +176,14 @@ bc(c)
     &package { bg: $pink }
     &module { bg: $darkOrange }
 
-  code,pre
-    :target & { bg: $gray2 }
-    background-color $gray3
-    color $gray8
-    font-weight 500
+  code, pre { fg: $gray8 }
+  code, pre, .decl__signature
+    :target & { bg: gray 2 }
     font-family $monospaceFont, monospace
+    font-weight 500
+    border 1px solid $gray1
+    border-radius 5px
+    background-color $gray2
 
   .ctor { fg: $yellow }
 
@@ -196,9 +195,6 @@ bc(c)
       &:hover { fg: $darkBlue }
     &signature, :target &signature
       padding 1rem
-      font-weight 500
-      border 1 solid $gray1
-      background-color $gray2
 
   .markdown-body
     blockquote
