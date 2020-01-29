@@ -34,7 +34,7 @@
 @var color gray7 "Gray 7" #828bb8
 @var color gray8 "Gray 8" #a9b8e8
 @var color gray9 "Gray 9" #b4c2f0
-@var color fg    "Foreground" #c8d3f5
+@var color foreground "Foreground" #c8d3f5
 @preprocessor   stylus
 ==/UserStyle== */
 
@@ -54,7 +54,7 @@ bc(c)
     --darkOrange darkOrange
     --darkRed darkRed
     --desaturatedGray desaturatedGray
-    --fg fg
+    --fg foreground
     --gray1 gray1
     --gray2 gray2
     --gray3 gray3
@@ -123,6 +123,7 @@ bc(c)
     list-style-type disc
     li
       padding-left 0
+      color $fg
       &::before
         content ""
         color $gray6
@@ -146,6 +147,12 @@ bc(c)
 
   .grouped-list
     border-top 1px solid $gray1
+    &__item
+      font-family $monospaceFont, monospace
+      font-size 1rem
+      font-weight 500
+      line-height 1.6
+      letter-spacing 0.02em
     &__title
       font-weight 400
       color $gray8
