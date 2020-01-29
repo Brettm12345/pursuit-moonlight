@@ -1,0 +1,208 @@
+/* ==UserStyle==
+@name Pursuit Moonlight
+@namespace    github.com/brettm12345/purescript-moonlight
+@homepageURL  https://github.com/brettm12345/purescript-moonlight
+@supportURL   https://github.com/brettm12345/purescript-moonlight/issues
+@updateURL    https://raw.githubusercontent.com/Brettm12345/purescript-moonlight/master/pursuit.user.styl
+@version      1.0.0
+@license      unlicense
+@author       brettm12345
+@description  A dark theme for pursuit.purescript.org
+@var text  monospaceFont "Monospace font" "JetBrains Mono"
+@var color desaturatedGray "Desaturated Gray" #7f85a3
+@var color darkBlue "Dark Blue" #82aaff
+@var color skyBlue "Sky Blue" #56c9ff
+@var color cyan "Cyan" #86e1fc
+@var color red "Red" #ff757f
+@var color darkRed "Dark Red" #ff5370
+@var color lightRed "Light Red" #ff98a4
+@var color yellow "Yellow" #ffc777
+@var color orange "Orange" #ff966c
+@var color darkOrange "Dark Orange" #fc7b7b
+@var color teal "Teal" #4fd6be
+@var color green "Green" #c3e88d
+@var color purple "Purple" #c597f9
+@var color pink "Pink" #f7a4ec
+@var color indigo "Indigo" #7a88cf
+@var color brightCyan "Bright Cyan" #b4f9f8
+@var color gray1 "Gray 1" #131421
+@var color gray2 "Gray 2" #191a2a
+@var color gray3 "Gray 3" #1e2030
+@var color gray4 "Gray 4" #222436
+@var color gray5 "Gray 5" #2f334d
+@var color gray6 "Gray 6" #4d5482
+@var color gray7 "Gray 7" #828bb8
+@var color gray8 "Gray 8" #a9b8e8
+@var color gray9 "Gray 9" #b4c2f0
+@var color fg    "Foreground" #c8d3f5
+@preprocessor   stylus
+==/UserStyle== */
+
+bg(c)
+  background-color c
+fg(c)
+  color c
+bc(c)
+  border-color c
+
+@-moz-document domain("persuit.purescript.org")
+  :root
+    --brightCyan brightCyan
+    --cyan  cyan
+    --darkBlue  darkBlue
+    --darkOrange darkOrange
+    --darkRed darkRed
+    --desaturatedGray  desaturatedGray
+    --fg  fg
+    --gray1  gray1
+    --gray2  gray2
+    --gray3  gray3
+    --gray4  gray4
+    --gray5  gray5
+    --gray6  gray6
+    --gray7  gray7
+    --gray8  gray8
+    --gray9  gray9
+    --green green
+    --indigo indigo
+    --lightRed  lightRed
+    --monospaceFont monospaceFont
+    --orange  orange
+    --pink pink
+    --purple purple
+    --red  red
+    --skyBlue  skyBlue
+    --teal teal
+    --white  white
+    --yellow  yellow
+
+  $brightCyan = var(--brightCyan)
+  $cyan = var(--cyan  )
+  $darkBlue = var(--darkBlue  )
+  $darkOrange = var(--darkOrange )
+  $darkRed = var(--darkRed    )
+  $desaturatedGray = var(--desaturatedGray  )
+  $fg = var(--fg  )
+  $gray1 = var(--gray1  )
+  $gray2 = var(--gray2  )
+  $gray3 = var(--gray3  )
+  $gray4 = var(--gray4  )
+  $gray5 = var(--gray5  )
+  $gray6 = var(--gray6  )
+  $gray7 = var(--gray7  )
+  $gray8 = var(--gray8  )
+  $gray9 = var(--gray9  )
+  $green = var(--green )
+  $indigo = var(--indigo )
+  $lightRed = var(--lightRed  )
+  $monospaceFont = var(--monospaceFont)
+  $orange = var(--orange)
+  $pink = var(--pink )
+  $purple = var(--purple )
+  $red  = var(--red  )
+  $skyBlue = var(--skyBlue  )
+  $teal = var(--teal )
+  $white = var(--white  )
+  $yellow = var(--yellow  )
+
+  body
+    font-family sans-serif
+    color $gray9
+    background-color $gray4
+
+  :target
+    background-color $gray4
+
+  ::selection
+    color $white
+    background-color $teal
+
+  table, td
+    border-color $gray2
+
+  // hr { bg: rgba($gray1, 10%) }
+
+  a, a:visited
+    // &:hover { fg: lighten($darkBlue, 1.28%) }
+    &, &:hover > code { fg: $darkBlue }
+
+  .decl__body
+    .keyword, .syntax { fg: $purple }
+    .message.message--not-available
+      border-color $darkRed
+      color $white
+      background-color $darkRed
+    .top-banner
+      &__actions__item a:hover, &__logo:hover { fg: $darkBlue }
+      background-color $gray3
+    .footer
+      background-color $gray3
+      // p { fg: lighten($gray6, 5%) }
+      .deplink__version
+        font-weight 500
+        color $darkOrange
+      .page-title__label { fg: $gray8 }
+      .grouped-list
+        border-top basis(0.125) solid $gray1
+        &__title
+          font-weight 400
+          color $gray8
+
+  .result__signature
+    padding 0.5rem
+    border 1 solid $gray2
+    background-color $gray3
+
+  ul
+    color $gray9
+    list-style-type disc
+    li
+      padding-left 0
+      &::before
+        content ""
+
+  #search-input, select#hident2 { bg: $gray2 }
+  #search-input
+    color $fg
+    &::placeholder { fg: $gray6 }
+
+  select#hident2
+    padding 0.3rem
+    border none
+    outline none
+
+  .badge.badge--
+    &package { bg: $pink }
+    &module { bg: $darkOrange }
+
+  code,pre
+    :target & { bg: $gray2 }
+    background-color $gray3
+    color $gray8
+    font-weight 500
+    font-family $monospaceFont, monospace
+
+  .ctor { fg: $yellow }
+
+  .decl__
+    &anchor
+      &, &:visited { fg: $gray8 }
+      // &:hover { fg: lighten($darkBlue, 1.28%) }
+    &signature, :target &signature
+      padding 8rem
+      font-weight 500
+      border 1 solid $gray1
+      background-color $gray2
+
+  .markdown-body
+    blockquote
+      border-color $gray2
+      color $gray8
+
+    .pl-
+      &k { fg: $purple }
+      &c1 { fg: $orange }
+      &en { fg: $yellow }
+      &s { fg: $green }
+      &ent { fg: $red }
+      &smi { fg: $gray9 }
