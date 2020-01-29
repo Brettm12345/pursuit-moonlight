@@ -4,7 +4,7 @@
 @homepageURL  https://github.com/brettm12345/pursuit-moonlight
 @supportURL   https://github.com/brettm12345/pursuit-moonlight/issues
 @updateURL    https://raw.githubusercontent.com/brettm12345/pursuit-moonlight/master/pursuit.user.styl
-@version      1.0.1
+@version      1.0.2
 @license      unlicense
 @author       brettm12345
 @description  A dark theme for pursuit.purescript.org
@@ -146,8 +146,6 @@ bc(c)
       font-weight 400
       color $gray8
 
-  .decl__body
-    .keyword, .syntax { fg: $purple }
 
   .message.message--not-available
     border-color $darkRed
@@ -191,11 +189,13 @@ bc(c)
   .ctor { fg: $yellow }
 
   .decl__
+    .&body
+      .keyword, .syntax { fg: $purple }
     &anchor
       &, &:visited { fg: $gray8 }
       &:hover { fg: $darkBlue }
     &signature, :target &signature
-      padding 8rem
+      padding 1rem
       font-weight 500
       border 1 solid $gray1
       background-color $gray2
