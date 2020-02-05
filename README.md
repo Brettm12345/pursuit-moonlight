@@ -6,4 +6,4 @@ Just a decent UserStyle for pursuit.purescript.org based on [moonlight-vscode-th
 
 ## Screenshot
 
-![screenshot](./screenshot.png)
+![screenshot](https://raw.githubusercontent.com/Brettm12345/pursuit-moonlight/master/screenshot.png)
