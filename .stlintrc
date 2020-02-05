@@ -16,8 +16,7 @@
       "indentPerf": "spaces"
     },
     "depthControl": {
-      "enabled": false,
-      "indentPref": 2
+      "enabled": false
     }
   }
 }
