@@ -2,7 +2,7 @@
 
 ## About
 
-Just a decent UserStyle for pursuit.purescript.org
+Just a decent UserStyle for pursuit.purescript.org based on [moonlight-vscode-theme](https://github.com/atomiks/moonlight-vscode-theme)
 
 ## Screenshot
 
